@@ -10,7 +10,7 @@ services:
     env_file: ["${HOME}/.config/llm-study/jupyter.env"]
     volumes:
       - ..:/work
-      - ${HOME}/.config/llm-study/git-credentials:/home/study/.git-credentials:ro
+      - ${HOME}/.config/llm-study/git:/home/study/.config/git
       - ${HOME}/.config/llm-study/gitconfig:/home/study/.gitconfig:ro
     ports: ["127.0.0.1:8888:8888"]
     gpus: all

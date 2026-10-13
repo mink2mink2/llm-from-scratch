@@ -32,7 +32,7 @@ Needs Docker with the NVIDIA runtime and driver >= 570 (torch is built for CUDA 
 ```bash
 git clone <gitea url>/admin/llm-study.git ~/study/llm-from-scratch && cd ~/study/llm-from-scratch
 mkdir -p ~/.config/llm-study && echo "JUPYTER_TOKEN=$(openssl rand -hex 16)" > ~/.config/llm-study/jupyter.env
-# ~/.config/llm-study/gitconfig and git-credentials: copy the layout from m2Msi (never paste tokens into chat)
+# ~/.config/llm-study/gitconfig and ~/.config/llm-study/git/credentials: same layout as on m2Msi (never paste tokens into chat)
 docker compose -f study-env/compose.yaml up -d --build
 ```
 
