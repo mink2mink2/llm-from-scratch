@@ -342,3 +342,15 @@ cython_debug/
 *.egg-info
 
 
+
+# llm-study: model weights, downloads and checkpoints stay out of git (re-download or re-train on another machine)
+*.pth
+*.pt
+*.safetensors
+*.ckpt
+*.bin
+*.h5
+gpt2/
+checkpoints/
+.ipynb_checkpoints/
+.venv/
